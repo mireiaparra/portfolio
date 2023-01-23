@@ -2,6 +2,7 @@ import '../styles/App.scss';
 import Cover from './Cover';
 import {Route, Routes} from 'react-router-dom';
 import { Header } from './Header';
+import { Footer } from './Footer';
 
 function App() {
   // VARIABLES ESTADO
@@ -21,7 +22,10 @@ function App() {
       <Routes>
       <Route
           path='/' element={
+            <>
             <Cover/>
+            <Footer />
+            </>
           }/>
         <Route
           path='/sobre-mi' element={
