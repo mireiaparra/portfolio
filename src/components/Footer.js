@@ -1,28 +1,48 @@
+import React, { useState, useEffect } from "react";
+
 export function Footer() {
+const showBelow = 400;
+const [show, setShow] = useState(false);
+const scrollToTop = () => {
+    window[`scrollTo`]({ top: 0, behavior: `smooth` });
+  };
+
+   const handleScroll = () => {
+    if (window.pageYOffset > showBelow) {
+      if (!show) setShow(true);
+    } else {
+      if (show) setShow(false);
+    }
+  };
+
+  useEffect(() => {
+      window.addEventListener(`scroll`, handleScroll);
+      return () => window.removeEventListener(`scroll`, handleScroll);
+  });
+
   return (
     <footer className="footer">
-      <h2>Contactemos</h2>
+      <h2 className="footer__title">Contactemos</h2>
       <form action="https://formspree.io/f/mayznzyy" method="POST">
         <fieldset className="footer__form" id="contact-form">
-          <label for="full-name">Nombre</label>
           <input
+          className="footer__form--input"
             type="text"
             name="full-name"
             id="full-name"
-            placeholder="Mireia Parra"
+            placeholder="Nombre"
             required=""
           />
-          <label for="email-address">Email</label>
           <input
+           className="footer__form--input"
             type="email"
             name="email-address"
             id="email-address"
-            placeholder="mirmalparra@gmail.com"
+            placeholder="Email"
             required=""
           />
-          <label for="message">Mensaje</label>
           <textarea
-            rows="5"
+           className="footer__form--input"
             name="message"
             id="message"
             placeholder="Escribe aquí lo que me quieras decir"
@@ -35,8 +55,9 @@ export function Footer() {
             value="Contact Form Submission"
           />
         </fieldset>
-        <input type="submit" value="Submit" />
+        <input className="footer__form--submit" type="submit" value="Enviar" />
       </form>
+      {show && <button className="footer__button"><i className=" fa-solid fa-up-long" onClick={scrollToTop}></i></button> }
     </footer>
   );
 }
