@@ -1,4 +1,4 @@
-import image from "../images/FotoCV.png"
+import image from "../../images/FotoCV.png";
 import Typewriter from 'typewriter-effect';
 import { Background } from "./Background";
 

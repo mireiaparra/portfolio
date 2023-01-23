@@ -1,0 +1,68 @@
+.projects{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Comfortaa';
+
+    &__introduction {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__text {
+    margin-top: 30px;
+
+    &--container {
+        width: 350px;
+        text-align: center;
+        background-color: #a89dbc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    } 
+}
+
+    &__title {
+        font-family: 'Revonza';
+        letter-spacing: 2px;
+        font-size: 2rem;
+        border-bottom: 3px solid #95d3e0;
+      
+    }
+
+&__list {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    height: 80vh;
+    
+} 
+&__li {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    animation: showProjects 2000ms cubic-bezier(.25,.25,.75,.75) forwards;
+    transition-delay: 3000ms;
+    pointer-events: auto;
+}   
+}
+
+@keyframes showProjects {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+};

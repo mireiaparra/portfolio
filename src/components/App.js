@@ -1,8 +1,9 @@
 import '../styles/App.scss';
-import Cover from './Cover';
+import Cover from './home/Cover';
 import {Route, Routes} from 'react-router-dom';
 import { Header } from './Header';
-import { Footer } from './Footer';
+import { Footer } from './home/Footer';
+import { Projects } from './projects/Projects';
 
 function App() {
   // VARIABLES ESTADO
@@ -33,7 +34,7 @@ function App() {
           }/>
           <Route
           path='/proyectos' element={
-            <h1>Prueba proyectos</h1>
+            <Projects />
           }/>
             <Route
           path='/contacto' element={
