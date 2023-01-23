@@ -25,6 +25,12 @@ function Cover() {
         <img className="cover__img" src={image} alt="profile-pic"></img>
         </div>
         </article>
+        <div className="cover__icons--container">
+        <a target="_blank" rel="noreferrer" href="https://github.com/mireiaparra"><i className="fa-brands fa-github"></i> Github</a>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mireia-maldonado-parra/"><i className="fa-brands fa-linkedin"></i> Linkedin </a>
+        <a target="_blank" rel="noreferrer" href={`mailto:mirmalparra@gmail.com`}><i className="fa-solid fa-envelope"></i> Email</a>
+        <a target="_blank" rel="noreferrer" href={`tel:676838590`}><i className="fa-solid fa-phone"></i> Teléfono</a>
+        </div>
         </main>
     );
 };
