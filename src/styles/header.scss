@@ -1,0 +1,17 @@
+.header {
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+    &__list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: 'Revonza';
+    font-size: 20px;
+    letter-spacing: 2px;
+    & > li > a {
+      color: #a89dbc;
+    }
+  }}
