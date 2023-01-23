@@ -1,6 +1,8 @@
 import { Background } from "../home/Background";
 import React, { useState, useEffect } from "react";
 import allData from "../../data/dataProjects";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 export function Projects() {
 const [dataProjects, setDataProjects] = useState([]);
 useEffect(() => {
@@ -26,7 +28,9 @@ const eachProject = dataProjects.map((project) => {
             </section>
 
             <section className="projects__allProjects">
+            <AnimationOnScroll animateIn="showProjects">
             <ul className="projects__list">{eachProject}</ul>
+            </AnimationOnScroll>
             </section>
         </main>
     )

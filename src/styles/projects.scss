@@ -51,12 +51,13 @@
     width: 300px;
     height: 300px;
     border-radius: 10px;
+}   
+}
+.showProjects {
     animation: showProjects 2000ms cubic-bezier(.25,.25,.75,.75) forwards;
     transition-delay: 3000ms;
     pointer-events: auto;
-}   
 }
-
 @keyframes showProjects {
     from {
         opacity: 0;
