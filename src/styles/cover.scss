@@ -67,8 +67,20 @@
             padding: 8px;
             border-radius: 10%;
             color: white;
+            border: 3px solid transparent;
+              &:hover {
+                transform: scale(1.1);
+                background-color: #95d3e0;
+                border: 3px solid #a89dbc;
+                transition: 300ms ease-in;
+
+                & i {
+                    color: #a89dbc;
+                }
+            }
             & i {
                 color: #95d3e0;
+              
             }
             }
         }

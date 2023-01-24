@@ -46,6 +46,13 @@
             right: 0;
             left: 0;
             cursor: pointer;
+            transition: 300ms ease-out;
+            &:hover {
+                transform: scale(1.1);
+                background-color: #a89dbc;
+                border: 3px solid #95d3e0;
+                transition: 300ms ease-in;
+            }
         }
     }
 

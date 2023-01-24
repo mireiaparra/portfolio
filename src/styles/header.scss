@@ -15,5 +15,9 @@
     letter-spacing: 2px;
     & > li > a {
       color: #a89dbc;
+
+      &:hover{
+        border-bottom: 3px solid #95d3e0;
+      }
     }
   }}
