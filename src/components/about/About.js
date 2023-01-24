@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
+import techImg from "../../data/techImg";
 
 export function About(){
+    const eachTech = techImg.map((tech) => {
+        return (
+            <li key={tech.id}>
+                <img src={tech.img} alt={tech.title}/>
+                <h3>{tech.title}</h3>
+            </li>
+            
+        );
+      });
     return(
         <section className="about">
         <div className="projects__text--container">
@@ -11,6 +21,8 @@ export function About(){
         <Link className="about__link" to="/portfolio/src/files/CV_Mireia_MaldonadoES.pdf" target="_blank">Ver CV</Link>
         <Link className="about__link"to="/portfolio/src/files/CV_Mireia_MaldonadoES.pdf" target="_blank" download="CV_Mireia_Maldonado">Descargar CV</Link>
         </div>
+        <ul className="about__tech">{eachTech}
+        </ul>
         </section>
 
 
