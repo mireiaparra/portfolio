@@ -56,6 +56,9 @@
         width: 4%;
         font-size: 1.5rem;
         animation: scrollUp 2000ms;
+        &--projects {
+           background-color: #a89dbc;
+        }
     }
 }
 

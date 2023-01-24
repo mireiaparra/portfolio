@@ -5,10 +5,28 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export function Projects() {
+const showBelow = 400;
+const [show, setShow] = useState(false);
 const [dataProjects, setDataProjects] = useState([]);
 useEffect(() => {
         setDataProjects(allData);
     });
+const scrollToTop = () => {
+    window[`scrollTo`]({ top: 0, behavior: `smooth` });
+  };
+
+   const handleScroll = () => {
+    if (window.pageYOffset > showBelow) {
+      if (!show) setShow(true);
+    } else {
+      if (show) setShow(false);
+    }
+  };
+
+  useEffect(() => {
+      window.addEventListener(`scroll`, handleScroll);
+      return () => window.removeEventListener(`scroll`, handleScroll);
+  });
 
 const eachProject = dataProjects.map((project) => {
     return (
@@ -43,6 +61,7 @@ const eachProject = dataProjects.map((project) => {
             <ul className="projects__list" >{eachProject}</ul>
         
             </section>
+              {show && <button className="footer__button footer__button--projects"><i className=" fa-solid fa-up-long" onClick={scrollToTop}></i></button> }
         </main>
     )
 }
