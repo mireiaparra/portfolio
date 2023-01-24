@@ -4,6 +4,8 @@ import {Route, Routes} from 'react-router-dom';
 import { Header } from './Header';
 import { Footer } from './home/Footer';
 import { Projects } from './projects/Projects';
+import { About } from './about/About';
+import { Background } from './home/Background';
 
 function App() {
   // VARIABLES ESTADO
@@ -19,29 +21,23 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Background/>
        
       <Routes>
       <Route
           path='/' element={
-            <>
             <Cover/>
-            <Footer />
-            </>
           }/>
         <Route
           path='/sobre-mi' element={
-            <h1>Prueba</h1>
+            <About/>
           }/>
           <Route
           path='/proyectos' element={
             <Projects />
           }/>
-            <Route
-          path='/contacto' element={
-            <h1>Prueba contacto</h1>
-          }/>
       </Routes>
-     
+      <Footer />
   
 
     </div>

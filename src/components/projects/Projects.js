@@ -48,7 +48,6 @@ const eachProject = dataProjects.map((project) => {
 
     return(
         <main className="projects">
-            <Background />
             <section className="projects__introduction">
             <div className="projects__text--container">
             <h2 className="projects__title">Mis proyectos</h2>

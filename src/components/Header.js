@@ -12,9 +12,6 @@ export function Header(){
           <li>
             <a href='/#/proyectos'>Proyectos</a>
           </li>
-          <li>
-            <a href='/#/contacto'>Contacto</a>
-          </li>
         </ul>
       </nav>
       </header>

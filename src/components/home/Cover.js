@@ -5,7 +5,6 @@ import { Background } from "./Background";
 function Cover() {
     return(
         <main className = "home">
-        <Background />
         <article className="cover">
         <div className="cover__text">
         <h2 className="cover__pretitle">Hola <i className="em em-hand cover__emoji" aria-label="RAISED HAND"></i> soy</h2>
