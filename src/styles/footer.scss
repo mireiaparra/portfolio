@@ -71,6 +71,10 @@
         &--projects {
            background-color: #a89dbc;
         }
+
+        &:hover{
+            transform: scale(1.5);
+        }
     }
 }
 
