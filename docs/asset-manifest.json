@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1adfcbd8.css",
+    "main.js": "./static/js/main.e4921105.js",
+    "static/media/responsiveWeb.png": "./static/media/responsiveWeb.e78cde79b80dceac429d.png",
+    "static/media/strangerThings.png": "./static/media/strangerThings.015a71d410097fdc3ee3.png",
+    "static/media/boardGames.png": "./static/media/boardGames.8b32a2b2815b8893908b.png",
+    "static/media/FotoCV.png": "./static/media/FotoCV.5495c51ba9b343a33793.png",
+    "static/media/Comfortaa-Bold.ttf": "./static/media/Comfortaa-Bold.c6eb380b9f8f0920f934.ttf",
+    "static/media/breakingCode.png": "./static/media/breakingCode.8b986447d996386af51f.png",
+    "static/media/Revonza.ttf": "./static/media/Revonza.1d99799a9c395ee34857.ttf",
+    "static/media/pureCss.png": "./static/media/pureCss.9dcbafb07fddf52ae9c0.png",
+    "static/media/adacards.png": "./static/media/adacards.112ffd5c3fa0a806d24b.png",
+    "static/media/alohomoraCards.png": "./static/media/alohomoraCards.bc8860569b89e4d212f7.png",
+    "static/media/react.png": "./static/media/react.52de6422409ad1571d1f.png",
+    "static/media/sass.png": "./static/media/sass.a88006fbbc6651c1bee0.png",
+    "static/media/git.png": "./static/media/git.848d8eb4034119060c76.png",
+    "static/media/sqlite.png": "./static/media/sqlite.21e44fb16b7127134c2b.png",
+    "static/media/js.png": "./static/media/js.e9d170f029643ca8763d.png",
+    "static/media/css-3.png": "./static/media/css-3.7654ce00c5ac2e76e015.png",
+    "static/media/html5.png": "./static/media/html5.868c6b00618cb445e9c3.png",
+    "index.html": "./index.html",
+    "main.1adfcbd8.css.map": "./static/css/main.1adfcbd8.css.map",
+    "main.e4921105.js.map": "./static/js/main.e4921105.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1adfcbd8.css",
+    "static/js/main.e4921105.js"
+  ]
+}
