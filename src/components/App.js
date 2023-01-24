@@ -21,18 +21,9 @@ function App() {
       <Background/>
        
       <Routes>
-      <Route
-          path='/' element={
-            <Cover/>
-          }/>
-        <Route
-          path='/sobre-mi' element={
-            <About/>
-          }/>
-          <Route
-          path='/proyectos' element={
-            <Projects />
-          }/>
+        <Route path='/' element={<Cover/>}/>
+        <Route path='/sobre-mi' element={<About/>}/>
+        <Route path='/proyectos' element={<Projects />}/>
       </Routes>
       <Footer />
   
