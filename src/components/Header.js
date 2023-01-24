@@ -1,6 +1,10 @@
-export function Header(){
+import { BurgerMenu } from "./BurgerMenu";
+
+export function Header({handleClick, isNavOpen}){
     return(
         <header className = "header">
+           <i className="fa-solid fa-bars header__burger" onClick={handleClick} ></i>
+          <BurgerMenu handleClick={handleClick} isNavOpen={isNavOpen}/>
         <nav>
         <ul className="header__list">
         <li>

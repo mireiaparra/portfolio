@@ -6,21 +6,18 @@ import { Footer } from './home/Footer';
 import { Projects } from './projects/Projects';
 import { About } from './about/About';
 import { Background } from './home/Background';
+import {useState} from 'react';
 
 function App() {
-  // VARIABLES ESTADO
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  // USEEFFECT ?
-
-  // FUNCIONES HANDLER
-
-  // FUNCIONES Y VARIABLES QUE AYUDEN A RENDERIZAR HTML
-
-  // HTML EN EL RETURN
+  function handleClick() {
+       setIsNavOpen(!isNavOpen);
+   }
 
   return (
     <div className="App">
-      <Header />
+      <Header handleClick={handleClick} isNavOpen={isNavOpen}/>
       <Background/>
        
       <Routes>
