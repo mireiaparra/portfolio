@@ -1,5 +1,5 @@
 .footer {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     margin-top: 112px;
     background-color: #a89dbc;
@@ -59,14 +59,15 @@
     }
 
     &__button {
-        background-color: #95d3e0;
+        color: #95d3e0;
+        background-color: transparent;
         border: none;
-        padding: 15px;
+        padding: 10px;
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 5px;
+        right: 10px;
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         animation: scrollUp 2000ms;
         &--projects {
            background-color: #a89dbc;
