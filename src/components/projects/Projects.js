@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import allData from "../../data/dataProjects";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 export function Projects() {
 const [dataProjects, setDataProjects] = useState([]);
 useEffect(() => {
@@ -11,9 +12,19 @@ useEffect(() => {
 
 const eachProject = dataProjects.map((project) => {
     return (
+        <AnimationOnScroll animateIn="showProjects" key={project.id} >
         <li className="projects__li" style={{backgroundImage: `url(${project.img})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: 'center'}}>
+            <div className="projects__name">
             <h2>{project.title}</h2>
+            <a href={project.github} alt={project.title}>  
+             <i className="fa-brands fa-github-alt projects__name--iconGit"></i>
+             </a>
+             <a href={project.link} alt={project.title}>  
+             <i className="fa-solid fa-link projects__name--iconLink"></i>
+             </a>
+            </div>
         </li>
+        </AnimationOnScroll>
     );
   });
 
@@ -28,9 +39,9 @@ const eachProject = dataProjects.map((project) => {
             </section>
 
             <section className="projects__allProjects">
-            <AnimationOnScroll animateIn="showProjects">
-            <ul className="projects__list">{eachProject}</ul>
-            </AnimationOnScroll>
+         
+            <ul className="projects__list" >{eachProject}</ul>
+        
             </section>
         </main>
     )
