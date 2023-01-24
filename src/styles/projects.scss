@@ -20,6 +20,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
+        align-items: center;
         background-color: #a89dbc;
         border-radius: 5px;
         padding: 20px;
@@ -32,6 +33,7 @@
         letter-spacing: 2px;
         font-size: 2rem;
         border-bottom: 3px solid #95d3e0;
+        width: max-width;
       
     }
 
