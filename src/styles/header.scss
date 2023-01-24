@@ -24,7 +24,7 @@
     background-color: white;
     position: absolute;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -36,6 +36,7 @@
     background-color: #a89dbc;
     font-family: 'Revonza';
     letter-spacing: 2px;
+    margin-bottom: 10px;
 
     & a {
       color: white;
