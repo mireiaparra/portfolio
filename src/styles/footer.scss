@@ -1,7 +1,6 @@
 .footer {
     height: 90vh;
     width: 100%;
-    margin-top: 112px;
     background-color: #a89dbc;
     display: flex;
     flex-direction: column;
@@ -89,6 +88,15 @@
             &--input{
                 width: rem(500);
             }
+
+            &--submit {
+                width: rem(300);
+            }
         }
+
+
+    &__button {
+        font-size: 2rem;
+    }
     }
 }

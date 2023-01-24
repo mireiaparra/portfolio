@@ -1,9 +1,9 @@
 .home {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .cover {
@@ -101,21 +101,19 @@
 @media all and(min-width: 768px) {
 .cover {
     flex-direction: row;
-    margin-top: 100px;
+    margin: 100px 20px 0 20px;
 
-     &__img {
-        height: 283px;
-        transform: translate(88px, 6px);
-        border-radius: 73% 27% 92% 48%;
-        background-color: #a89dbc; 
-        
-    &--container {
-        width: 400px;
-        height: 300px;
-        margin-top: 20px;
-        background-color:#a89dbc; 
-        border-radius: 73% 27% 52% 48% / 43% 28% 72% 57% 
+    &__img {
+        left: 0;
+        height: rem(230);
+        &--container {
+            width: rem(350);
+            height: rem(250);
+            margin-top: 20px;
+            background-color:#a89dbc; 
+            border-radius: 73% 27% 52% 48% / 43% 28% 72% 57% 
+        }
     }
-}
+  
 }
 }
