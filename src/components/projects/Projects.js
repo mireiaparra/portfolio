@@ -31,7 +31,7 @@ const scrollToTop = () => {
 const eachProject = dataProjects.map((project) => {
     return (
         <AnimationOnScroll animateIn="showProjects" key={project.id} >
-        <li className="projects__li" style={{backgroundImage: `url(${project.img})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: 'center'}}>
+        <li className="projects__li" style={{backgroundImage: `url(${project.img})`}}>
             <div className="projects__name">
             <h2>{project.title}</h2>
             <a href={project.github} alt={project.title}>  

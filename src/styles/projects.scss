@@ -43,6 +43,7 @@
     display: flex;
     position: relative;
     margin: 0 auto;
+    margin-bottom: 20px;
     left: 0;
     right: 0;
     width: 60%;
@@ -50,6 +51,7 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    min-height: 100vh;
     
 } 
 &__li {
@@ -59,6 +61,8 @@
     border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
+    background-size: contain; 
+    background-position: center;
 
     &:hover .projects__name{
        transform: translateY(70%);
@@ -70,19 +74,19 @@
     bottom: 70px;
     left: 64px;
     width: 60%;
-    height: 30%;
+    height: 50%;
     background-color: #a89dbc9e;
     font-size: 1.1rem;
-    padding: 20px;
     transition: ease-out 300ms;
-    transform: translateY(120%);
+    transform: translateY(130%);
+    padding-left: 10px;
+    padding-top: 3px;
 
     &--iconGit{
         position: absolute;
         bottom: 10px;
         right: 5px;
         color: black;
-        padding: 20px;
         font-size: 1.3rem;
         &:hover {
             color: white;
@@ -94,7 +98,6 @@
         bottom: 10px;
         right: 40px;
         color: black;
-        padding: 20px;
         font-size: 1.3rem;
         &:hover {
             color: white;
